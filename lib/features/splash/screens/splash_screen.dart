@@ -29,7 +29,7 @@ class SplashScreen extends StatelessWidget {
       child: Scaffold(
         body: Center(
           child: Text(
-            "LOGO",
+            "Splash Screen",
             style: TextStyle(fontSize: 30, fontWeight: FontWeight.w700),
           ),
         ),

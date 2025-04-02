@@ -7,7 +7,7 @@ class SplashBloc extends Bloc<SplashEvent, SplashState> {
   SplashBloc() : super(SplashInitial()) {
     on<LoadSplash>((event, emit) async {
       emit(SplashLoading());
-      await Future.delayed(Duration(seconds: 3));
+      await Future.delayed(Duration(seconds: 1));
       bool isLogedIn = true;
       emit(SplashLoaded(isLogedIn));
     });
